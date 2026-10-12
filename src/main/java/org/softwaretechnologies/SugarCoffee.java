@@ -6,7 +6,11 @@ package org.softwaretechnologies;
 //     к стоимости базового напитка добавьте 20.
 //     к описанию добавьте " + sugar"
 //     */
-
-public class SugarCoffee {
+public class SugarCoffe implements CoffeeInterface {
+    private CoffeeInterface coffee;
 
 }
+public class SugarCoffee(CoffeeInterface coffee) {
+    this.coffee = coffee;
+}
+@Override
