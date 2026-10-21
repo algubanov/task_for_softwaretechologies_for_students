@@ -6,10 +6,10 @@ package org.softwaretechnologies;
 //     к стоимости базового напитка добавьте 20.
 //     к описанию добавьте " + sugar"
 //     */
-<<<<<<< HEAD
-public class SugarCoffe implements CoffeeInterface {
+
+public class SugarCoffee implements CoffeeInterface {
     private CoffeeInterface coffee;
-=======
+
 
 public class SugarCoffee implements CoffeeInterface {
 
@@ -28,7 +28,7 @@ public class SugarCoffee implements CoffeeInterface {
     public String description() {
         return coffee.description() + " + sugar";
     }
->>>>>>> 78c4c60 (Task 6 20.10)
+
 
 }
 public class SugarCoffee(CoffeeInterface coffee) {
