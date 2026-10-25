@@ -1,23 +1,25 @@
 package org.softwaretechnologies.animals;
 
 public enum AnimalType {
-    CAT{
+    CAT {
         @Override
-        public Animal createAnimal() {
-            return new Cat(null);
+        public Animal createAnimal(String name) {
+            return new Cat(name);
         }
-    }, DOG{
+    },
+    DOG {
         @Override
-        public Animal createAnimal() {
-            return new Dog(null);
+        public Animal createAnimal(String name) {
+            return new Dog(name);
         }
-    }, COW{
+    },
+    COW {
         @Override
-        public Animal createAnimal() {
-            return new Cow(null);
+        public Animal createAnimal(String name) {
+            return new Cow(name);
         }
     };
 
-    public abstract Animal createAnimal();
+    public abstract Animal createAnimal(String name);
 
 }
